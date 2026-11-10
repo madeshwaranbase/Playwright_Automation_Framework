@@ -1,0 +1,20 @@
+{
+  "name": "eventhub-playwright-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright UI and API automation framework for EventHub",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:api": "playwright test tests/api",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.2"
+  }
+}
