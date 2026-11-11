@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "types": ["node", "@playwright/test"],
-    "outDir": "dist",
+    "noEmit": true,
     "skipLibCheck": true
   },
   "include": ["playwright.config.ts", "src/**/*.ts", "tests/**/*.ts"]

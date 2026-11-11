@@ -1,20 +1,23 @@
 {
   "name": "eventhub-playwright-automation",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Playwright UI and API automation framework for EventHub",
+  "description": "EventHub end-to-end UI and OpenAPI-driven API automation",
   "scripts": {
     "test": "playwright test",
-    "test:chromium": "playwright test --project=chromium",
-    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test tests/ui",
     "test:api": "playwright test tests/api",
-    "report": "playwright show-report",
-    "typecheck": "tsc --noEmit"
+    "test:chromium": "playwright test --project=chromium",
+    "test:browsers": "playwright test tests/ui --project=chromium --project=firefox --project=webkit",
+    "test:headed": "playwright test --headed",
+    "test:booking": "playwright test tests/ui/booking.spec.ts",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.0",
-    "@types/node": "^22.10.0",
-    "dotenv": "^16.4.7",
-    "typescript": "^5.7.2"
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.15.0",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
   }
 }
